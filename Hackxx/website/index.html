@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+
+
+  <!-- <p>This example uses a full URL to link to a web page:</p> -->
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class ="pull-left">
+          <li><a href="#author-info">Authors</a></li>
+          <li><a href="#use-info">Style</a></li>
+          <li><a href="#how-to-run">Apply New Filter</a></li>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="https://www.libertypuzzles.com/userfiles/media/images/6199/starry-night-large-piece-puzzle-XL.jpg"></script>
+    <div class="jumbotron">
+      <div class="container">
+        <h1> Creat Your Own Filters </h1>
+        <p>Upload the image, and we will return a new world to you!</p>
+        <a href="https://sites.google.com/ucsd.edu/hackxx-project/home">Click Here to check out our demo</a>
+      </div>
+    </div>
+
+    <div class="function">
+      <div class="container">
+        <a name="use-info"></a>
+        <h2>Pre-trained Art Styles:</h2>
+        <p> Several art styles are pre-trained via publicaly avalieble "Neural Transfer Style" python code. 
+            <a href="https://github.com/pytorch/examples/tree/master/fast_neural_style">Click Here to check out their project.</a>
+        </p>
+
+        <img src="https://raw.githubusercontent.com/pytorch/examples/master/fast_neural_style/images/style-images/candy.jpg" style="width:200px;height:200px;border:0">
+        <img src="https://raw.githubusercontent.com/pytorch/examples/master/fast_neural_style/images/style-images/mosaic.jpg" style="width:200px;height:200px;border:0">
+        <img src="https://raw.githubusercontent.com/pytorch/examples/master/fast_neural_style/images/style-images/udnie.jpg" style="width:200px;height:200px;border:0">
+        <img src="https://raw.githubusercontent.com/pytorch/examples/master/fast_neural_style/images/style-images/rain-princess-cropped.jpg" style="width:200px;height:200px;border:0">
+
+      </div>
+    </div>
+
+    <div class ="apply_filters">
+        <div class="container">
+          <a name="how-to-run"></a>
+          <form>
+            <div class="image">
+              <image width="100%" />
+            </div>
+            <h3> 1. Upload Original Image: </h3>
+            <input type="file" name="Image" accept=".jpg,.jpeg"> 
+            <button type="submit">Upload</button>
+
+            <h3> 2. Select Exisiting Filters</h3>
+            <input type="checkbox" name="StarryNight" value="StarryNight"> Starry Night
+            <input type="checkbox" name="candy" value="candy"> Candy
+            <input type="checkbox" name="mosaic" value="mosaic"> Mosaic
+            <input type="checkbox" name="RainPrincess" value="RainPrincess"> Rain Princess
+
+            <h3> or Using Your Own Style: </h3>
+            <input type="file" name="Image" accept=".jpg,.jpeg"> 
+            <button type="submit">Upload</button>
+        </form>
+        </div>
+    </div>
+
+    <div class="learn-more">
+    <div class="container">
+    <div class ="row">
+    <div class ="col-md-4">
+      <a name="author-info"></a>
+        <h3>Authors</h3>
+        <p>Jiazhen Rong, a 4th year Bioengineering: Biotechnology student.</p>
+        <p>Haihao Sun, a 1st-year Math-CS student.</p>
+        <p>Sid Limaye, a 3rd-year Bioinformatics and Math-CS student.</p>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6AzuiQuSRjQnwUMCgqWTRrqWduxZN_AZ4NCQzxZmLH_0W2c-nvA" >
+    </div>
+    </div>
+    </div>
+
+  </body>
+</html>
